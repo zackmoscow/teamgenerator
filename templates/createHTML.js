@@ -58,7 +58,6 @@ function createHTML(inputs) {
 
     fs.writeFile("./output/index.html", content, function (err) {
         if (err) throw err;
-        console.log("Success! index.html was written.");
     });
 }
 
