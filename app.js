@@ -1,9 +1,10 @@
 const inquirer = require("inquirer");
+const createHTML = require("./templates/createHTML")
 
 const init = async () => {
     const inputs = await getEmployeeInfo();
-    console.log(inputs);
-    // next is generateHTML
+    createHTML(inputs);
+    console.log("It works!")
 };
 
 const getManagerInfo = async () => {
