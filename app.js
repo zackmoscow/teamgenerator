@@ -4,7 +4,6 @@ const createHTML = require("./templates/createHTML")
 const init = async () => {
     const inputs = await getEmployeeInfo();
     createHTML(inputs);
-    console.log("It works!")
 };
 
 const getManagerInfo = async () => {
